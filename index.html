@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rainy Days</title>
+  <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Rainy Days</h1>
+    <a href="checkout/index.html">
+      Cart (<span id="cart-count">0</span>)
+    </a>
+  </header>
+
+  <main>
+    <div id="status"></div>
+    <div class="filter-bar">
+      <label for="filter">Filter by gender:</label>
+      <select id="filter">
+        <option value="all">All</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select>
+    </div>
+    <section id="product-list"></section>
+  </main>
+
+  <script type="module" src="JS/index.js"></script>
+</body>
+</html>
+

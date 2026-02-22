@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout</title>
+  <link rel="stylesheet" href="checkout.css" />
+</head>
+<body>
+
+  <header>
+    <a href="../index.html">← Back to Home</a>
+    <div>Cart (<span id="cart-count">0</span>)</div>
+  </header>
+
+  <main>
+    <h1>Your cart</h1>
+    <div id="status"></div>
+
+    <section id="cart-items"></section>
+
+    <div class="summary">
+      <p>Total: <strong><span id="total">0</span> kr</strong></p>
+      <a class="checkout-btn" href="confirmation.html">Checkout</a>
+    </div>
+  </main>
+
+  <script type="module" src="checkout.js"></script>
+</body>
+</html>
+
