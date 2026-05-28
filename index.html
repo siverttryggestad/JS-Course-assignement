@@ -10,6 +10,13 @@
 
   <header>
     <h1>Rainy Days</h1>
+
+    <nav class="header-nav">
+    <button class="filter-btn" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="Male">Male</button>
+    <button class="filter-btn" data-filter="Female">Female</button>
+    </nav>
+
     <a href="checkout/index.html">
       Cart (<span id="cart-count">0</span>)
     </a>
@@ -17,14 +24,6 @@
 
   <main>
     <div id="status"></div>
-    <div class="filter-bar">
-      <label for="filter">Filter by gender:</label>
-      <select id="filter">
-        <option value="all">All</option>
-        <option value="Male">Male</option>
-        <option value="Female">Female</option>
-      </select>
-    </div>
     <section id="product-list"></section>
   </main>
 

@@ -11,21 +11,21 @@ function updateCartCount() {
 }
 
 function setupFilter() {
-  const filterSelect = document.querySelector("#filter");
-  if (!filterSelect) return;
+  const filterButtons = document.querySelectorAll(".filter-btn");
 
-  filterSelect.addEventListener("change", (event) => {
-    const value = event.target.value;
+  filterButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      const value = button.dataset.filter;
 
-    if (value === "all") {
-      renderProductList(allProducts);
-      return;
-    }
-
-    const filtered = allProducts.filter((product) =>
-  String(product.gender).toLowerCase() === value.toLowerCase()
-);
-    renderProductList(filtered);
+      if (value === "all") {
+        renderProductList(allProducts);
+      } else {
+        const filtered = allProducts.filter((product) => 
+          String(product.gender).toLowerCase() === value.toLowerCase()
+        );
+        renderProductList(filtered);
+      }
+    });
   });
 }
 
