@@ -1,7 +1,7 @@
-# Project Name
+# Javascript CA
 
 ## Description
-Short description of the project.
+An API-driven rainy days store where users can browse, filter, and add products to cart using javascript
 
 ## Built With
 - HTML
@@ -16,15 +16,14 @@ Short description of the project.
 etc.
 
 ## Improvements Made
-- Added clickable homepage cards
-- Added cart counter using localStorage
-etc.
+- Made filtering easier at the navigation bar instead of a hamburger menu for a easier time navigating the page
 
 ## Live Demo
 (link)
 
 ## GitHub Repo
-(link)
+https://github.com/siverttryggestad/JS-Course-assignement
 
 ## Contact
-(name/email)
+Sivert Tryggestad
+Mail: siverttryggestad@gmail.com
